@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/
+
+
+.toggle_switch{
+    margin: 0;
+    display: flexbox;
+    height: 20px;
+    width: 40px;
+    appearance: none;
+    background-color: #c2c1c1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.521);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.toggle_switch:checked{
+    background-color: deepskyblue;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle_switch::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 14px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 0px 1px black;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle_switch:checked::before{
+    left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle_switch:active{
+    cursor: auto;
+}

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/
+
+html{
+    height: 100%;
+}
+
+#ladrilho_inicial{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg, #0088ff, #d9d60b, #fd0303);
+}
+
+#conteudo_inicio{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+}
+
+#alcance_checkpoint_inicio{
+    margin: auto;
+    height: 30px;
+    width: 60px;
+    margin-top: 20px;
+}
+
+#alcance_checkpoint_inicio::before{
+    width: 30px;
+    height: 30px;
+}
+
+#alcance_checkpoint_inicio:checked{
+    margin: auto;
+}
+
+#alcance_checkpoint_inicio:checked::before{
+    margin: auto;
+    left: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+#titulo_inicio{
+    font-family: 'ChakraPetch_medium', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#primeiro_questionamento_inicio{
+    margin-top: 30px;
+    font-family: 'Roboto_regular', sans-serif;
+}
+
+#questionamento_inicio{
+    font-family: 'Roboto_medium', sans-serif;
+}
+
+.tentativa{
+    font-family: 'Roboto_light', sans-serif;
+    display: block;
+    display: inline;
+    font-size: 20px;
+}
+
+#pontuacao_inicio{
+    font-family: 'Roboto_medium', sans-serif;
+    background-color: #000152;
+    color: beige;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#visualisador_pontuacao_inicial{
+    font-family: 'Roboto_medium', sans-serif;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    background-color: #000152;
+    border-radius: 10px;
+}
+
+#icones_inicio{
+    margin-top: 20px;
+}
+

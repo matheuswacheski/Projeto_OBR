@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio {
+    background-image: url("imagens/HD-wallpaper-lego-black-logo-stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#titulo {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 30px;
+    font-family: 'Roboto_light', sans-serif;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 1px 1px 5.5px black;
+    text-align: center;
+}
+
+#OBR {
+    width: 120px;
+}
+
+#linha1 {
+    font-size: 40px;
+    font-family: 'ChakraPetch_medium';
+}
+
+#descricao {
+    font-family: 'Roboto_medium', sans-serif;
+}
+
+#iniciar {
+    text-decoration: none;
+    color: white;
+    background-color: #0B79D9;
+    padding: 15px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#iniciar:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+

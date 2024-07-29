@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/

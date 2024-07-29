@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/
+
+@keyframes colorTransition_perigos {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes colorTransition_ladrilho {
+    0% {
+        background-color: blue;
+    }
+    100% {
+        background-color: rgb(0, 248, 0);
+    }
+}
+
+
+
+body{
+    background: linear-gradient(320deg, #0088ff 73%, #d9d60b, #fd0303 103%);
+    background-size: 100% 600%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 240vh;
+}
+
+.oculto{
+    display: none;
+}
+
+#conteudo_pista_a{
+    background-color: rgba(255, 255, 255, 0.60);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+}
+
+#titulo{
+    font-family: 'ChakraPetch_medium', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#subtitulo_perigos{
+    font-family: 'Roboto_regular', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #fffb00;
+    color: rgb(0, 136, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#primeiro_questionamento{
+    font-family: 'Roboto_light';
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.nome_obstaculo{
+    font-family: 'Roboto_regular';
+    display: inline;
+    font-size: 20px;
+}
+
+#barra_perigo{
+    border: 0;
+    height: 2px;
+    margin: 20px 10px;
+    margin-top: 40px;
+    animation: colorTransition_perigos 3s infinite alternate;
+}
+
+#pontos_perigo{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#visualisador_obstaculo_pista_a{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fffb00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 136, 255);
+    border-radius: 10px;
+}
+
+#ladrilho_titulo{
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Roboto_regular', sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: #09cf02;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#questionamento_ladrilho{
+    font-family: 'Roboto_light';
+    display: inline;
+    font-size: 20px;
+}
+
+#questionamento_tentativa{
+    font-family: 'Roboto_medium';
+    text-align: center;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tentativa_pista_a{
+    display: inline;
+    font-size: 22px;
+    font-family: 'Roboto_regular';
+    text-align: center;
+    margin-left: 60px;
+}
+
+#seletor_ladrilhos{
+    font-family: 'Roboto_medium';
+    font-size: 19px;
+    text-align: center;
+}
+
+#quantidade_ladrilhos{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#barra_ladrilho{
+    border: 0;
+    height: 2px;
+    margin: 20px 10px;
+    margin-top: 40px;
+    animation: colorTransition_ladrilho 3s infinite alternate;
+}
+
+#pontos_ladrilhos{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#visualisador_ladrilhos_pista_a{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #09cf02;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+#pontos_pista{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #000152;
+    color: white;
+    border-radius: 20px;
+}
+
+#visualisador_pontuacao_pista{
+    font-family: 'Roboto_medium', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    background-color: #000152;
+    border-radius: 10px;
+}
+
+#icones_pista_a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

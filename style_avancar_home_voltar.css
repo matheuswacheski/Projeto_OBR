@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Roboto_thin';
+    src: url('Roboto/Roboto-Thin.ttf') format('truetype'); 
+}/*Fonte 'Roboto_thin'*/
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}/*Fonte 'Roboto_regular'*/
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url('Roboto/Roboto-Light.ttf') format('truetype');
+}/*Fonte 'Roboto_light'*/
+
+@font-face {
+    font-family: 'Roboto_medium';
+    src: url('Roboto/Roboto-Medium.ttf') format('truetype');
+}/*Fonte 'Roboto_medium'*/
+
+@font-face {
+    font-family: 'ChakraPetch_medium';
+    src: url('ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
+}/*Fonte 'ChakraPetch_medium'*/
+
+
+#voltar{
+    margin: 2px;
+    padding: 2px;
+    background-color: #585858;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#voltar:hover{
+    background-color: inherit;
+    border-color: inherit;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#voltar:active{
+    background-color: initial;
+    border-color: initial;
+}
+
+#home{
+    margin: 2px;
+    padding: 2px;
+    background-color: #161430;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+
+#home:hover{
+    background-color: inherit;
+    border-color: inherit;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#home:active{
+    background-color: initial;
+    border-color: initial;
+}
+
+#avancar{
+    margin: 2px;
+    padding: 2px;
+    background-color: #585858;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#avancar:hover{
+    background-color: inherit;
+    border-color: inherit;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#avancar:active{
+    background-color: initial;
+    border-color: initial;
+}
