@@ -13,7 +13,13 @@ let pontos_ladrilhos = 0;
 //função atualizar pontos de perigos
 function atualizar_pontos_perigo() {
     pontos_perigo = pontos_beco + pontos_gangorra + pontos_gap + pontos_intersecao + pontos_lombada + pontos_obstaculo + pontos_rampa;
-    document.getElementById('visualisador_obstaculo_pista_a').innerHTML = pontos_perigo;
+    document.getElementById('visualisador_obstaculo').innerHTML = pontos_perigo;
+}
+
+function recalcularAltura() {
+    // Recalcula o layout
+    document.body.style.height = 'auto';
+    document.body.style.height = `${document.body.scrollHeight}px`;
 }
 
 /*Pontuação do beco*/
@@ -33,6 +39,7 @@ document.getElementById('beco_1').addEventListener("change", function () {
 
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('beco_2').addEventListener("change", function () {
@@ -47,6 +54,7 @@ document.getElementById('beco_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('beco_3').addEventListener("change", function () {
@@ -57,6 +65,7 @@ document.getElementById('beco_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação do beco*/
 
@@ -74,6 +83,7 @@ document.getElementById('gangorra_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('gangorra_2').addEventListener("change", function () {
@@ -84,6 +94,7 @@ document.getElementById('gangorra_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação da gangorra*/
 
@@ -104,6 +115,7 @@ document.getElementById('gap_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('gap_2').addEventListener("change", function () {
@@ -118,6 +130,7 @@ document.getElementById('gap_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('gap_3').addEventListener("change", function () {
@@ -128,6 +141,7 @@ document.getElementById('gap_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação do gap*/
 
@@ -170,6 +184,7 @@ document.getElementById('intersecao_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_2').addEventListener("change", function () {
@@ -206,6 +221,7 @@ document.getElementById('intersecao_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_3').addEventListener("change", function () {
@@ -239,6 +255,7 @@ document.getElementById('intersecao_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_4').addEventListener("change", function () {
@@ -269,6 +286,7 @@ document.getElementById('intersecao_4').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_5').addEventListener("change", function () {
@@ -296,6 +314,7 @@ document.getElementById('intersecao_5').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_6').addEventListener("change", function () {
@@ -320,6 +339,7 @@ document.getElementById('intersecao_6').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_7').addEventListener("change", function () {
@@ -341,6 +361,7 @@ document.getElementById('intersecao_7').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_8').addEventListener("change", function () {
@@ -359,6 +380,7 @@ document.getElementById('intersecao_8').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_9').addEventListener("change", function () {
@@ -374,6 +396,7 @@ document.getElementById('intersecao_9').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('intersecao_10').addEventListener("change", function () {
@@ -384,6 +407,7 @@ document.getElementById('intersecao_10').addEventListener("change", function () 
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação da intersecção*/
 
@@ -404,6 +428,7 @@ document.getElementById('lombada_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('lombada_2').addEventListener("change", function () {
@@ -418,6 +443,7 @@ document.getElementById('lombada_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('lombada_3').addEventListener("change", function () {
@@ -428,6 +454,7 @@ document.getElementById('lombada_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação da lombada*/
 
@@ -448,6 +475,7 @@ document.getElementById('obstaculo_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('obstaculo_2').addEventListener("change", function () {
@@ -462,6 +490,7 @@ document.getElementById('obstaculo_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('obstaculo_3').addEventListener("change", function () {
@@ -472,6 +501,7 @@ document.getElementById('obstaculo_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação do obstáculo*/
 
@@ -498,6 +528,7 @@ document.getElementById('rampa_1').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('rampa_2').addEventListener("change", function () {
@@ -515,6 +546,7 @@ document.getElementById('rampa_2').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('rampa_3').addEventListener("change", function () {
@@ -529,6 +561,7 @@ document.getElementById('rampa_3').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('rampa_4').addEventListener("change", function () {
@@ -539,6 +572,7 @@ document.getElementById('rampa_4').addEventListener("change", function () {
     }
     atualizar_pontos_perigo();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Pontuação da rampa*/
 
@@ -560,6 +594,7 @@ document.getElementById('alcance_checkpoint').addEventListener("change", functio
         secao_seletor_ladrilhos.classList.add('oculto');
     }
     atualizar_pontos_ladrilhos();
+    recalcularAltura();
 })
 
 function handleToggle(selectedId) {
@@ -580,47 +615,51 @@ let valor_a_multiplicar = 0;
 function atualizar_pontos_ladrilhos() {
     let quantidade_ladrilho = document.getElementById('quantidade_ladrilhos').value;
     pontos_ladrilhos = valor_a_multiplicar * quantidade_ladrilho;
-    document.getElementById('visualisador_ladrilhos_pista_a').innerHTML = pontos_ladrilhos;
+    document.getElementById('visualisador_ladrilhos').innerHTML = pontos_ladrilhos;
 }
 
 document.getElementById('primeira_tentativa').addEventListener('change', function () {
-    if(this.checked){
+    if (this.checked) {
         valor_a_multiplicar = 5;
     } else {
         valor_a_multiplicar = 0;
     }
     atualizar_pontos_ladrilhos();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('segunda_tentativa').addEventListener('change', function () {
-    if(this.checked){
+    if (this.checked) {
         valor_a_multiplicar = 3;
     } else {
         valor_a_multiplicar = 0;
     }
     atualizar_pontos_ladrilhos();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('terceira_tentativa').addEventListener('change', function () {
-    if(this.checked){
+    if (this.checked) {
         valor_a_multiplicar = 1;
     } else {
         valor_a_multiplicar = 0;
     }
     atualizar_pontos_ladrilhos();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 
 document.getElementById('quantidade_ladrilhos').addEventListener('change', function () {
     atualizar_pontos_ladrilhos();
     atualizar_pontos_total();
+    recalcularAltura();
 })
 /*Quantidade ladrilhos*/
 
 //Função para atualizar a pontuação total
-function atualizar_pontos_total () {
+function atualizar_pontos_total() {
     let pontos_total = pontos_perigo + pontos_ladrilhos;
     document.getElementById('visualisador_pontuacao_pista').innerHTML = pontos_total;
 }
