@@ -125,3 +125,8 @@ html{
     margin-top: 20px;
 }
 
+#submissao{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

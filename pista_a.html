@@ -14,238 +14,240 @@
     <div id="conteudo_pistas">
         <p id="titulo">Pista A</p>
         <p id="subtitulo_perigos">Perigos no trajeto</p>
-        <p id="primeiro_questionamento">Quais os perigos superados no trajeto?</p>
+        <form action="manipular_pista_a.php" method="post">
+            <p id="primeiro_questionamento">Quais os perigos superados no trajeto?</p>
 
-        <div id="acertos_obstaculo">
-            <p class="nome_obstaculo">Beco 1</p>
-            <input type="checkbox" name="beco_1" id="beco_1" class="toggle_switch">
-            <br>
-
-            <div id="beco_2_container" class="oculto">
-                <p class="nome_obstaculo">Beco 2</p>
-                <input type="checkbox" name="beco_2" id="beco_2" class="toggle_switch">
+            <div id="acertos_obstaculo">
+                <p class="nome_obstaculo">Beco 1</p>
+                <input type="checkbox" name="beco_1" id="beco_1" class="toggle_switch" value="10">
                 <br>
+
+                <div id="beco_2_container" class="oculto">
+                    <p class="nome_obstaculo">Beco 2</p>
+                    <input type="checkbox" name="beco_2" id="beco_2" class="toggle_switch" value="10">
+                    <br>
+                </div>
+
+                <div id="beco_3_container" class="oculto">
+                    <p class="nome_obstaculo">Beco 3</p>
+                    <input type="checkbox" name="beco_3" id="beco_3" class="toggle_switch" value="10">
+                    <br>
+                </div>
+
+
+                <p class="nome_obstaculo">Gangorra 1</p>
+                <input type="checkbox" name="gangorra_1" id="gangorra_1" class="toggle_switch">
+                <br>
+
+                <div id="gangorra_2_container" class="oculto">
+                    <p class="nome_obstaculo">Gangorra 2</p>
+                    <input type="checkbox" name="gangorra_2" id="gangorra_2" class="toggle_switch">
+                    <br>
+                </div>
+
+
+                <p class="nome_obstaculo">Gap 1</p>
+                <input type="checkbox" name="gap_1" id="gap_1" class="toggle_switch">
+                <br>
+
+                <div id="gap_2_container" class="oculto">
+                    <p class="nome_obstaculo">Gap 2</p>
+                    <input type="checkbox" name="gap_2" id="gap_2" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="gap_3_container" class="oculto">
+                    <p class="nome_obstaculo">Gap 3</p>
+                    <input type="checkbox" name="gap_3" id="gap_3" class="toggle_switch">
+                    <br>
+                </div>
+
+
+                <p class="nome_obstaculo">Interseção 1</p>
+                <input type="checkbox" name="intersecao_1" id="intersecao_1" class="toggle_switch">
+                <br>
+
+                <div id="intersecao_2_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 2</p>
+                    <input type="checkbox" name="intersecao_2" id="intersecao_2" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_3_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 3</p>
+                    <input type="checkbox" name="intersecao_3" id="intersecao_3" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_4_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 4</p>
+                    <input type="checkbox" name="intersecao_4" id="intersecao_4" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_5_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 5</p>
+                    <input type="checkbox" name="intersecao_5" id="intersecao_5" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_6_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 6</p>
+                    <input type="checkbox" name="intersecao_6" id="intersecao_6" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_7_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 7</p>
+                    <input type="checkbox" name="intersecao_7" id="intersecao_7" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_8_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 8</p>
+                    <input type="checkbox" name="intersecao_8" id="intersecao_8" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_9_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 9</p>
+                    <input type="checkbox" name="intersecao_9" id="intersecao_9" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="intersecao_10_container" class="oculto">
+                    <p class="nome_obstaculo">Interseção 10</p>
+                    <input type="checkbox" name="intersecao_10" id="intersecao_10" class="toggle_switch">
+                    <br>
+                </div>
+
+
+                <p class="nome_obstaculo">Lombada 1</p>
+                <input type="checkbox" name="lombada_1" id="lombada_1" class="toggle_switch">
+                <br>
+
+                <div id="lombada_2_container" class="oculto">
+                    <p class="nome_obstaculo">Lombada 2</p>
+                    <input type="checkbox" name="lombada_2" id="lombada_2" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="lombada_3_container" class="oculto">
+                    <p class="nome_obstaculo">Lombada 3</p>
+                    <input type="checkbox" name="lombada_3" id="lombada_3" class="toggle_switch">
+                    <br>
+                </div>
+
+                <p class="nome_obstaculo">Obstáculo 1</p>
+                <input type="checkbox" name="obstaculo_1" id="obstaculo_1" class="toggle_switch">
+                <br>
+
+                <div id="obstaculo_2_container" class="oculto">
+                    <p class="nome_obstaculo">Obstáculo 2</p>
+                    <input type="checkbox" name="obstaculo_2" id="obstaculo_2" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="obstaculo_3_container" class="oculto">
+                    <p class="nome_obstaculo">Obstáculo 3</p>
+                    <input type="checkbox" name="obstaculo_3" id="obstaculo_3" class="toggle_switch">
+                    <br>
+                </div>
+
+                <p class="nome_obstaculo">Rampa 1</p>
+                <input type="checkbox" name="rampa_1" id="rampa_1" class="toggle_switch">
+                <br>
+
+                <div id="rampa_2_container" class="oculto">
+                    <p class="nome_obstaculo">Rampa 2</p>
+                    <input type="checkbox" name="rampa_2" id="rampa_2" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="rampa_3_container" class="oculto">
+                    <p class="nome_obstaculo">Rampa 3</p>
+                    <input type="checkbox" name="rampa_3" id="rampa_3" class="toggle_switch">
+                    <br>
+                </div>
+
+                <div id="rampa_4_container" class="oculto">
+                    <p class="nome_obstaculo">Rampa 4</p>
+                    <input type="checkbox" name="rampa_4" id="rampa_4" class="toggle_switch">
+                    <br>
+                </div>
+
+
+                <hr id="barra_perigo">
+
+                <p id="pontos_perigo">Pontos de perigo</p>
+                <section id="visualisador_obstaculo">0</section>
             </div>
 
-            <div id="beco_3_container" class="oculto">
-                <p class="nome_obstaculo">Beco 3</p>
-                <input type="checkbox" name="beco_3" id="beco_3" class="toggle_switch">
-                <br>
+            <div id="acertos_ladrilho">
+                <p id="ladrilho_titulo">Ladrilhos</p>
+                <div id="questionamento_ladrilho">
+                    <p>O robô alcançou o checkpoint?</p>
+                    <input type="checkbox" name="alcance_checkpoint_pista_a" id="alcance_checkpoint"
+                        class="toggle_switch">
+                </div>
+
+                <div id="seletor_tentativa" class="oculto">
+                    <p id="questionamento_tentativa">Em qual tentativa?</p>
+
+                    <p class="tentativa">Primeira Tentativa:</p>
+                    <input type="checkbox" name="alternancia_tentativa" class="toggle_switch" id="primeira_tentativa">
+                    <br>
+
+                    <p class="tentativa">Segunda Tentativa:</p>
+                    <input type="checkbox" name="alternancia_tentativa" class="toggle_switch" id="segunda_tentativa">
+                    <br>
+
+                    <p class="tentativa">Terceira tentativa: </p>
+                    <input type="checkbox" name="alternancia_tentativa" class="toggle_switch" id="terceira_tentativa">
+                    <br>
+                </div>
+
+                <div id="secao_seletor_ladrilhos" class="oculto">
+                    <p id="seletor_ladrilhos">Qual a quantidade de ladrilhos?</p>
+                    <select name="quantidade_ladrilhos_pista_a" id="quantidade_ladrilhos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
             </div>
 
+            <hr id="barra_ladrilho">
 
-            <p class="nome_obstaculo">Gangorra 1</p>
-            <input type="checkbox" name="gangorra_1" id="gangorra_1" class="toggle_switch">
-            <br>
+            <p id="pontos_ladrilhos">Pontos de Ladrilhos</p>
+            <section id="visualisador_ladrilhos">0</section>
 
-            <div id="gangorra_2_container" class="oculto">
-                <p class="nome_obstaculo">Gangorra 2</p>
-                <input type="checkbox" name="gangorra_2" id="gangorra_2" class="toggle_switch">
-                <br>
+            <p id="pontos_pista">Pontuação da Pista</p>
+            <section id="visualisador_pontuacao_pista">0</section>
+
+            <div id="icones_pista_a">
+                <a href="ladrilho_inicio.html"><img src="imagens/arrow_back_20dp_FILL0_wght400_GRAD0_opsz20.png"
+                        alt="voltar" id="voltar"></a>
+                <a href="index.html"><img src="imagens/home_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="home"
+                        id="home"></a>
+                <button id="submissao" type="submit"><img src="imagens/arrow_forward_20dp_FILL0_wght400_GRAD0_opsz20.png"
+                        alt="avancar" id="avancar"></button>
             </div>
-
-
-            <p class="nome_obstaculo">Gap 1</p>
-            <input type="checkbox" name="gap_1" id="gap_1" class="toggle_switch">
-            <br>
-
-            <div id="gap_2_container" class="oculto">
-                <p class="nome_obstaculo">Gap 2</p>
-                <input type="checkbox" name="gap_2" id="gap_2" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="gap_3_container" class="oculto">
-                <p class="nome_obstaculo">Gap 3</p>
-                <input type="checkbox" name="gap_3" id="gap_3" class="toggle_switch">
-                <br>
-            </div>
-
-
-            <p class="nome_obstaculo">Interseção 1</p>
-            <input type="checkbox" name="intersecao_1" id="intersecao_1" class="toggle_switch">
-            <br>
-
-            <div id="intersecao_2_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 2</p>
-                <input type="checkbox" name="intersecao_2" id="intersecao_2" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_3_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 3</p>
-                <input type="checkbox" name="intersecao_3" id="intersecao_3" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_4_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 4</p>
-                <input type="checkbox" name="intersecao_4" id="intersecao_4" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_5_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 5</p>
-                <input type="checkbox" name="intersecao_5" id="intersecao_5" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_6_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 6</p>
-                <input type="checkbox" name="intersecao_6" id="intersecao_6" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_7_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 7</p>
-                <input type="checkbox" name="intersecao_7" id="intersecao_7" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_8_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 8</p>
-                <input type="checkbox" name="intersecao_8" id="intersecao_8" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_9_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 9</p>
-                <input type="checkbox" name="intersecao_9" id="intersecao_9" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="intersecao_10_container" class="oculto">
-                <p class="nome_obstaculo">Interseção 10</p>
-                <input type="checkbox" name="intersecao_10" id="intersecao_10" class="toggle_switch">
-                <br>
-            </div>
-            
-
-            <p class="nome_obstaculo">Lombada 1</p>
-            <input type="checkbox" name="lombada_1" id="lombada_1" class="toggle_switch">
-            <br>
-
-            <div id="lombada_2_container" class="oculto">
-                <p class="nome_obstaculo">Lombada 2</p>
-                <input type="checkbox" name="lombada_2" id="lombada_2" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="lombada_3_container" class="oculto">
-                <p class="nome_obstaculo">Lombada 3</p>
-                <input type="checkbox" name="lombada_3" id="lombada_3" class="toggle_switch">
-                <br>
-            </div>
-
-            <p class="nome_obstaculo">Obstáculo 1</p>
-            <input type="checkbox" name="obstaculo_1" id="obstaculo_1" class="toggle_switch">
-            <br>
-
-            <div id="obstaculo_2_container" class="oculto">
-                <p class="nome_obstaculo">Obstáculo 2</p>
-                <input type="checkbox" name="obstaculo_2" id="obstaculo_2" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="obstaculo_3_container" class="oculto">
-                <p class="nome_obstaculo">Obstáculo 3</p>
-                <input type="checkbox" name="obstaculo_3" id="obstaculo_3" class="toggle_switch">
-                <br>
-            </div>
-
-            <p class="nome_obstaculo">Rampa 1</p>
-            <input type="checkbox" name="rampa_1" id="rampa_1" class="toggle_switch">
-            <br>
-
-            <div id="rampa_2_container" class="oculto">
-                <p class="nome_obstaculo">Rampa 2</p>
-                <input type="checkbox" name="rampa_2" id="rampa_2" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="rampa_3_container" class="oculto">
-                <p class="nome_obstaculo">Rampa 3</p>
-                <input type="checkbox" name="rampa_3" id="rampa_3" class="toggle_switch">
-                <br>
-            </div>
-
-            <div id="rampa_4_container" class="oculto">
-                <p class="nome_obstaculo">Rampa 4</p>
-                <input type="checkbox" name="rampa_4" id="rampa_4" class="toggle_switch">
-                <br>
-            </div>
-            
-
-            <hr id="barra_perigo">
-
-            <p id="pontos_perigo">Pontos de perigo</p>
-            <section id="visualisador_obstaculo">0</section>
-        </div>
-
-        <div id="acertos_ladrilho">
-            <p id="ladrilho_titulo">Ladrilhos</p>
-            <p id="questionamento_ladrilho">O robô alcançou o checkpoint?</p>
-            <input type="checkbox" name="alcance_checkpoint_pista_a" id="alcance_checkpoint"
-                class="toggle_switch">
-
-            <div id="seletor_tentativa" class="oculto">
-                <p id="questionamento_tentativa">Em qual tentativa?</p>
-
-                <p class="tentativa">Primeira Tentativa:</p>
-                <input type="checkbox" name="alternancia_tentativa" class="toggle_switch"
-                    id="primeira_tentativa">
-                <br>
-
-                <p class="tentativa">Segunda Tentativa:</p>
-                <input type="checkbox" name="alternancia_tentativa" class="toggle_switch"
-                    id="segunda_tentativa">
-                <br>
-
-                <p class="tentativa">Terceira tentativa: </p>
-                <input type="checkbox" name="alternancia_tentativa" class="toggle_switch"
-                    id="terceira_tentativa">
-                <br>
-            </div>
-
-            <div id="secao_seletor_ladrilhos" class="oculto">
-                <p id="seletor_ladrilhos">Qual a quantidade de ladrilhos?</p>
-                <select name="quantidade_ladrilhos_pista_a" id="quantidade_ladrilhos">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                </select>
-            </div>
-        </div>
-
-        <hr id="barra_ladrilho">
-
-        <p id="pontos_ladrilhos">Pontos de Ladrilhos</p>
-        <section id="visualisador_ladrilhos">0</section>
-
-        <p id="pontos_pista">Pontuação da Pista</p>
-        <section id="visualisador_pontuacao_pista">0</section>
-
-        <div id="icones_pista_a">
-            <a href="ladrilho_inicio.html"><img src="imagens/arrow_back_20dp_FILL0_wght400_GRAD0_opsz20.png"
-                    alt="voltar" id="voltar"></a>
-            <a href="index.html"><img src="imagens/home_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="home"
-                    id="home"></a>
-            <a href="pista_b.html"><img src="imagens/arrow_forward_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="avancar"
-                    id="avancar"></a>
-        </div>
+        </form>
     </div>
     <script src="script_pista_a.js"></script>
 </body>
+
 </html>
